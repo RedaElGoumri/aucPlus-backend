@@ -10,6 +10,3 @@ class UserDetail(generics.RetrieveUpdateDestroyAPIView):
 class UserList(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-
-def helloWorld(HttpRequest):
-    return HttpResponse("Hello World")
