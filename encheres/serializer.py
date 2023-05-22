@@ -4,4 +4,4 @@ from .models import Enchere
 class EnchereSerializer(serializers.ModelSerializer):
     class Meta:
             model = Enchere
-            fields = ('id', 'name', 'description', 'typelot', 'typevente', 'responsable')
+            fields = ('id', 'name', 'description', 'typelot', 'typevente', 'seller', 'soldprice')
